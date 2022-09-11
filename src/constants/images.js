@@ -20,6 +20,7 @@ import award05 from '../assets/award05.png';
 import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
+import pollobg from '../assets/pollo-norte.jpg';
 
 export default {
   bg,
@@ -29,6 +30,7 @@ export default {
   gallery02,
   gallery03,
   gallery04,
+  pollobg,
   knife,
   logo,
   menu,

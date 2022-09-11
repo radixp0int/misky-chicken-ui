@@ -1,6 +1,6 @@
 import React from 'react';
-
-import { SubHeading, MenuItem } from '../../components'
+import MenuItem from './Menuitem';
+import { SubHeading } from '../../components'
 import { images, data } from '../../constants';
 
 import './SpecialMenu.scss';
