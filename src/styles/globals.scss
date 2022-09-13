@@ -89,7 +89,7 @@ body::-webkit-scrollbar-thumb {
   text-transform: capitalize;
   font-feature-settings: "tnum" on, "lnum" on;
   line-height: 26px;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .opensans {
@@ -99,7 +99,7 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 1px;
   text-transform: capitalize;
   line-height: 24px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .custom_button {
@@ -109,7 +109,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: 500;
   letter-spacing: 1px;
   line-height: 24px;
-  font-size: 16px;
+  font-size: 24px;
   padding: 0.5rem;
   border-radius: 1px;
   border: none;
@@ -216,13 +216,13 @@ body::-webkit-scrollbar-thumb {
 @media screen and (min-width: 2000px) {
   .custom_button {
     line-height: 26px;
-    font-size: 18px;
+    font-size: 36px;
   }
 
 
   .cormorant {
     line-height: 28px;
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .spoon_img {
@@ -268,11 +268,11 @@ body::-webkit-scrollbar-thumb {
   }
   
   .cormorant {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .opensans {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .app_wrapper {
@@ -282,7 +282,7 @@ body::-webkit-scrollbar-thumb {
 
 @media screen and (max-width: 450px) {
   .opensans {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .section_padding {
@@ -290,7 +290,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .cormorant {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .headtext_cormorant {

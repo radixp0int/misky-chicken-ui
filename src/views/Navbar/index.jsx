@@ -19,7 +19,8 @@ const Navbar = () => {
     <nav className={styles.navbar_container} id='navigation'>
       <Link to='#home' smooth={true} duration={500}>
         <div className={styles.navbar_logo}>
-          {/* <img src={images.gericht} alt='Restaurant Logo' /> */}Misky Chicken
+          {/* <img src={images.gericht} alt='Restaurant Logo' /> */}
+          <p className='cormorant'>Misky Chicken</p>
         </div>
       </Link>
 
@@ -35,7 +36,7 @@ const Navbar = () => {
 
       <div className={styles.navbar_login}>
         <p className={`${styles.menu_item} opensans`}>
-          <a href='tel:123-456-7890'>📞Order</a>
+          <a className='cormorant' href='tel:123-456-7890'>📞Order</a>
         </p>
       </div>
 
