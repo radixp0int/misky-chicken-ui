@@ -58,21 +58,25 @@
   margin-bottom: 1rem;
 }
 
-.footer_links_icons {
-  text-align: center;
-  margin-top: 0.5rem;
-}
 
-.footer_links_icons svg {
-  color: var(--color-white);
-  margin: 0.5rem;
-  font-size: 24px;
-  cursor: pointer;
-}
 
-.footer_links_icons svg:hover {
-  color: var(--color-golden);
-}
+    .footer_links_icons {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    .footer_links_icons svg {
+      color: var(--color-white);
+      margin: 0.5rem;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .footer_links_icons svg:hover {
+      color: var(--color-golden);
+    }
+
+
 
 .footer_headtext {
   font-family: var(--font-base);

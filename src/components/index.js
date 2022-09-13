@@ -1,4 +1,5 @@
 import Button from './Button/index';
+import SocialMedia from './SocialMedia';
 import SubHeading from './SubHeading/SubHeading';
 // import Newsletter from './Footer/Newsletter';
 // import FooterOverlay from './Footer/FooterOverlay';
@@ -6,6 +7,7 @@ import SubHeading from './SubHeading/SubHeading';
 
 export {
   Button,
+  SocialMedia,
   SubHeading,
   // Newsletter,
   // FooterOverlay,

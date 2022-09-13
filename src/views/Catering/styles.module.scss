@@ -1,0 +1,90 @@
+@use '../../styles/index' as *;
+
+.catering {
+    padding: 4rem 4rem;
+    width: 1200px;
+    border: 1px solid var(--color-golden);
+    background: var(--color-black);
+    z-index: 2;
+}
+
+.catering_heading {
+    text-align: center;
+}
+
+.catering_input {
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.catering_input input,
+textarea {
+    width: 620px;
+    border: 1px solid var(--color-golden);
+    border-radius: 2px;
+    font-size: 1.25rem;
+    font-family: var(--font-base);
+    color: var(--color-white);
+
+    // margin-right: 2rem;
+    padding: 0.5rem 1rem;
+    background: var(--color-black);
+}
+
+input,
+textarea {
+    //     flex-direction: column;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    //     width: 620px;
+    //     border: 1px solid var(--color-golden);
+    //     border-radius: 2px;
+    //     font-size: 1rem;
+    //     font-family: var(--font-base);
+    //     color: var(--color-white);
+
+    //     // margin-right: 2rem;
+    //     // padding: 0.75rem 1rem;
+    //     // background: var(--color-black);
+    //     padding: 0.5rem;
+    //     margin-top: 0.25rem;
+    //     margin-bottom: 1rem;
+    //     background: var(--color-black);
+}
+
+.catering_input button {
+    width: max-content;
+}
+
+@media screen and (min-width: 2000px) {
+    .catering_input input {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .catering_input {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .catering_input input {
+        margin: 0 0 2rem 0;
+        font-size: 1rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .catering {
+        padding: 2rem 0;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .catering_heading h1 {
+        font-size: 32px;
+        line-height: 50px;
+    }
+}

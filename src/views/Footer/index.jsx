@@ -1,6 +1,7 @@
 import { FiFacebook, FiInstagram, FiTwitter } from 'react-icons/fi';
 
 import { images } from '../../constants';
+import { SocialMedia } from '../../components';
 import FooterOverlay from './FooterOverlay';
 import styles from './styles.module.scss';
 
@@ -37,9 +38,7 @@ const Footer = () => (
                     style={{ marginTop: 15 }}
                 />
                 <div className={styles.footer_links_icons}>
-                    <FiFacebook />
-                    <FiInstagram />
-                    <FiTwitter />
+                    <SocialMedia />
                 </div>
             </div>
             <div className={styles.footer_links_work}>
