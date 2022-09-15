@@ -8,7 +8,6 @@ import VideoIntro from './views/VideoIntro';
 import Catering from './views/Catering';
 import Footer from './views/Footer';
 
-import './App.scss';
 import './styles/globals.scss'
 
 const App = () => (
