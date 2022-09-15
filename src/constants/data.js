@@ -79,4 +79,70 @@ const awards = [
   },
 ];
 
-export default { wines, cocktails, awards };
+const menu = [
+  {
+    name: 'Lomo Saltado',
+    description: 'Steak strips sautéed with tomatoes and onions, served with French fries and rice.',
+    price: 17.99,
+    options: 'All-Week',
+  },
+  {
+    name: 'Pollo Saltado',
+    description: 'Chicken strips sautéed with tomatoes and onions, served with French fries and rice.',
+    price: 16.99,
+    options: 'Weekdays',
+  },
+  {
+    name: 'Papa Rellena',
+    description: 'I am a good web developer.',
+    price: 9.99,
+    options: 'All-Week'
+  },
+  {
+    name: 'Arroz Chaufa',
+    description: 'Chicken fried rice. Rice with assorted ingredients of Peruvian cuisine and Chinese.',
+    price: 14.99,
+    options: 'Weekend'
+  },
+  {
+    name: 'Milanesa De Pollo',
+    description: 'Panned fried chicken breast served with red onions marinated in lemon juice, French fries and rice.',
+    price: 19.99,
+    options: 'Weekend'
+  },
+]
+
+const combos = [
+  {
+    name: 'Combo 1',
+    description: 'Steak strips sautéed with tomatoes and onions, served with French fries and rice.',
+    price: 17.99,
+    options: 'All-Week',
+  },
+  {
+    name: 'Combo 2',
+    description: 'Chicken strips sautéed with tomatoes and onions, served with French fries and rice.',
+    price: 16.99,
+    options: 'Weekdays',
+  },
+  {
+    name: 'Combo 3',
+    description: 'I am a good web developer.',
+    price: 9.99,
+    options: 'All-Week'
+  },
+  {
+    name: 'Combo 4',
+    description: 'Chicken fried rice. Rice with assorted ingredients of Peruvian cuisine and Chinese.',
+    price: 14.99,
+    options: 'Weekend'
+  },
+  {
+    name: 'Combo 5',
+    description: 'Panned fried chicken breast served with red onions marinated in lemon juice, French fries and rice.',
+    price: 22.99,
+    options: 'Weekend'
+  },
+]
+
+export default { menu, combos, wines, cocktails, awards };

@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './views/Navbar';
 import Home from './views/Home';
 import Contact from './views/Contact';
+import Menu from './views/Menu';
 import Gallery from './views/Gallery';
 import VideoIntro from './views/VideoIntro';
 import Catering from './views/Catering';
@@ -16,8 +17,8 @@ const App = () => (
     <Home />
     <VideoIntro />
     <Contact />
-    {/* <Menu /> */}
     <Gallery />
+    <Menu />
     <Catering />
     <Footer />
   </div>
