@@ -11,10 +11,22 @@
   margin: 0.5rem;
   font-size: 25px;
   cursor: pointer;
+
+  &:hover {
+    color: $color-golden;
+    transform: scale(0.98);
+    transition: .5s ease;
+  }
+
+  &.white {
+    color: $color-white;
+
+    &:hover {
+      color: $color-golden;
+    }
+  }
 }
 
-.social_icon:hover {
-  color: $color-black;
-  transform: scale(0.98);
-  transition: .5s ease;
-}
+// .social_icon:hover {
+//   color: $color-black;
+// }

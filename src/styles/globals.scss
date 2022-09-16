@@ -131,7 +131,20 @@ body::-webkit-scrollbar-thumb {
     color: $color-black;
     transform: scale(0.98);
     transition: .4s ease;
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid $color-golden;
+  }
+
+  &.white {
+    color: $color-white;
+    border-bottom: 1px solid $color-white;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-black;
+      transform: scale(0.98);
+      transition: .4s ease;
+      border-bottom: 1px solid $color-golden;
+    }
   }
 }
 
@@ -146,6 +159,11 @@ body::-webkit-scrollbar-thumb {
 .app_bg {
   // background: url('../assets/bg.png') no-repeat center center fixed;
   background-size: cover;
+  background-color: $color-burgundy;
+
+  &.white {
+    background-color: $color-white;
+  }
 }
 
 .app_wrapper {
@@ -209,6 +227,10 @@ body::-webkit-scrollbar-thumb {
   line-height: 50px;
   font-size: 46px;
   text-transform: capitalize;
+
+  &.white {
+    color: $color-white;
+  }
 }
 
 .spoon_img {

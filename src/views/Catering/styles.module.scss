@@ -4,7 +4,7 @@
     padding: 4rem 4rem;
     width: 1200px;
     border: 1px solid var(--color-golden);
-    background: var(--color-black);
+    background: var(--color-white);
     z-index: 2;
 }
 
@@ -24,11 +24,11 @@ textarea {
     border-radius: 2px;
     font-size: 1.25rem;
     font-family: var(--font-base);
-    color: var(--color-white);
+    color: var(--color-black);
 
     // margin-right: 2rem;
     padding: 0.5rem 1rem;
-    background: var(--color-black);
+    background: var(--color-crimson);
 }
 
 input,
@@ -71,7 +71,6 @@ textarea {
     .catering_input input {
         margin: 0 0 2rem 0;
         font-size: 1rem;
-        width: 100%;
     }
 }
 

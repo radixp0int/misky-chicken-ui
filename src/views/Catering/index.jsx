@@ -5,7 +5,7 @@ import styles from './styles.module.scss';
 
 const caterMessage = ''
 const Catering = () => (
-  <div className='app_bg app_wrapper section_padding' id='catering'>
+  <div className='app_bg white app_wrapper section_padding' id='catering'>
     <div className={styles.catering}>
       <div className={styles.catering_heading}>
         <SubHeading title='Catering' />
