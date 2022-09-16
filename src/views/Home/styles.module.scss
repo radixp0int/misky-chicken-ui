@@ -1,13 +1,13 @@
 @use '../../styles/index' as *;
 
 .header {
-  background-color: $color-black;
+  background-color: $color-white;
   display: flex;
   flex-wrap: wrap-reverse;
 
   .header_h1 {
     font-family: $font-base;
-    color: $color-golden;
+    color: $color-burgundy;
     font-weight: 700;
     text-transform: capitalize;
     line-height: 58px;

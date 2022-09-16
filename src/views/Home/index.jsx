@@ -28,6 +28,7 @@ const Home = () => {
               alt='Restaurant Food' />
           </div>
         </div>
+        
       </div>
     </div>
   )

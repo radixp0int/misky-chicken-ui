@@ -4,7 +4,7 @@
     width: 100%;
     flex-direction: row;
 
-    background: $color-black;
+    background: $color-white;
     padding: 4rem 0 4rem 6rem;
 }
 
@@ -49,6 +49,7 @@
     min-width: 301px;
     height: 447px;
     margin-right: 2rem;
+    background: $color-black;
 }
 
 .gallery_image_icon {

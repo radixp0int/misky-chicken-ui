@@ -7,14 +7,14 @@
 }
 
 .social_icon {
-  color: $color-white;
+  color: $color-burgundy;
   margin: 0.5rem;
   font-size: 25px;
   cursor: pointer;
 }
 
 .social_icon:hover {
-  color: $color-golden;
+  color: $color-black;
   transform: scale(0.98);
   transition: .5s ease;
 }

@@ -36,11 +36,11 @@ body {
 
 /* Scrollbar works on Chrome, Edge, and Safari */
 body::-webkit-scrollbar {
-  width: 14px;
+  width: 12x;
 }
 
 body::-webkit-scrollbar-track {
-  background: $color-black;
+  display: none;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -84,28 +84,36 @@ body::-webkit-scrollbar-thumb {
 
 .cormorant {
   font-family: $font-base;
-  color: $color-white;
+  color: $color-black;
   font-weight: 700;
   text-transform: capitalize;
   font-feature-settings: "tnum" on, "lnum" on;
   line-height: 26px;
   font-size: 24px;
+
+  &.white {
+    color: $color-white;
+  }
 }
 
 .opensans {
   font-family: $font-alt;
-  color: $color-white;
+  color: $color-black;
   font-weight: 400;
   letter-spacing: 1px;
   text-transform: capitalize;
   line-height: 24px;
   font-size: 20px;
+
+  &.white {
+    color: $color-white;
+  }
 }
 
 .custom_button {
   background-color: transparent;
   font-family: $font-base;
-  color: $color-golden;
+  color: $color-burgundy;
   font-weight: 500;
   letter-spacing: 1px;
   line-height: 24px;
@@ -115,7 +123,7 @@ body::-webkit-scrollbar-thumb {
   border: none;
   outline: none;
   cursor: pointer;
-  border-bottom: 1px solid $color-golden;
+  border-bottom: 1px solid $color-burgundy;
   text-align: center;
 
   &:hover {
@@ -136,7 +144,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .app_bg {
-  background: url('../assets/bg.png') no-repeat center center fixed;
+  // background: url('../assets/bg.png') no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -197,7 +205,7 @@ body::-webkit-scrollbar-thumb {
 
 .headtext_cormorant {
   font-family: $font-base;
-  color: $color-golden;
+  color: $color-burgundy;
   line-height: 50px;
   font-size: 46px;
   text-transform: capitalize;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './views/Navbar';
 import Home from './views/Home';
-import Contact from './views/Contact';
+import About from './views/About';
 import Menu from './views/Menu';
 import Gallery from './views/Gallery';
 import VideoIntro from './views/VideoIntro';
@@ -15,7 +15,7 @@ const App = () => (
     <Navbar />
     <Home />
     <VideoIntro />
-    <Contact />
+    <About />
     <Gallery />
     <Menu />
     <Catering />
