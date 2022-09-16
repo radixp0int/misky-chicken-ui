@@ -3,8 +3,8 @@
 .catering {
     padding: 4rem 4rem;
     width: 1200px;
-    border: 1px solid var(--color-golden);
-    background: var(--color-white);
+    border: 1px solid $color-golden;
+    background: $color-white;
     z-index: 2;
 }
 
@@ -20,15 +20,15 @@
 .catering_input input,
 textarea {
     width: 620px;
-    border: 1px solid var(--color-golden);
+    border: 1px solid $color-golden;
     border-radius: 2px;
     font-size: 1.25rem;
-    font-family: var(--font-base);
-    color: var(--color-black);
+    font-family: $font-base;
+    color: $color-black;
 
     // margin-right: 2rem;
     padding: 0.5rem 1rem;
-    background: var(--color-crimson);
+    background: $color-crimson;
 }
 
 input,
@@ -37,19 +37,19 @@ textarea {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     //     width: 620px;
-    //     border: 1px solid var(--color-golden);
+    //     border: 1px solid $color-golden);
     //     border-radius: 2px;
     //     font-size: 1rem;
-    //     font-family: var(--font-base);
-    //     color: var(--color-white);
+    //     font-family: $font-base);
+    //     color: $color-white);
 
     //     // margin-right: 2rem;
     //     // padding: 0.75rem 1rem;
-    //     // background: var(--color-black);
+    //     // background: $color-black);
     //     padding: 0.5rem;
     //     margin-top: 0.25rem;
     //     margin-bottom: 1rem;
-    //     background: var(--color-black);
+    //     background: $color-black);
 }
 
 .catering_input button {

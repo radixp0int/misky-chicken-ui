@@ -20,6 +20,7 @@ const Footer = () => (
             <div className={styles.footer_links_contact}>
                 <h1 className={styles.footer_headtext}>Contact Us</h1>
                 <p className='opensans white'>{address}</p>
+                <br />
                 <p className='opensans white'>{telephone}</p>
             </div>
             <div className={styles.footer_links_logo}>
@@ -42,12 +43,13 @@ const Footer = () => (
             </div>
             <div className={styles.footer_links_work}>
                 <h1 className={styles.footer_headtext}>Hours</h1>
-                <p className='opensans white'>Monday - Friday: 10:00AM - 10:00PM</p>
-                <p className='opensans white'>Saturday - Sunday: 11:00AM - 8:00PM</p>
+                <p className='opensans white'>Monday - Friday: 10AM - 10PM</p>
+                <br />
+                <p className='opensans white'>Saturday - Sunday: 11AM - 8PM</p>
             </div>
         </div>
         <div className={styles.footer_copyright}>
-            <p className='opensans white'>{`Misky Chicken ©${year}. ${allRightsReserved}`}</p>
+            <p className='opensans golden'>{`Misky Chicken ©${year}. ${allRightsReserved}`}</p>
         </div>
     </footer>
 );

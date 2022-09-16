@@ -7,7 +7,7 @@
 }
 
 .social_icon {
-  color: $color-burgundy;
+  color: $color-white;
   margin: 0.5rem;
   font-size: 25px;
   cursor: pointer;
@@ -16,14 +16,6 @@
     color: $color-golden;
     transform: scale(0.98);
     transition: .5s ease;
-  }
-
-  &.white {
-    color: $color-white;
-
-    &:hover {
-      color: $color-golden;
-    }
   }
 }
 

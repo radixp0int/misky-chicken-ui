@@ -11,7 +11,7 @@
   flex-direction: column;
 
   background-color: $color-black;
-  padding-top: 0;
+  // padding-top: 0;
   margin: 0 0;
   background: $color-burgundy;
 }
@@ -57,29 +57,27 @@
   margin-bottom: 1rem;
 }
 
-
-
     .footer_links_icons {
       text-align: center;
       margin-top: 0.5rem;
     }
 
     .footer_links_icons svg {
-      color: var(--color-white);
+      color: $color-white;
       margin: 0.5rem;
       font-size: 24px;
       cursor: pointer;
     }
 
     .footer_links_icons svg:hover {
-      color: var(--color-golden);
+      color: $color-golden;
     }
 
 
 
 .footer_headtext {
-  font-family: var(--font-base);
-  color: var(--color-white);
+  font-family: $font-base;
+  color: $color-golden;
   font-weight: 400;
   letter-spacing: 0.04em;
   text-transform: capitalize;

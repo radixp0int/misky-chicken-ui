@@ -94,6 +94,10 @@ body::-webkit-scrollbar-thumb {
   &.white {
     color: $color-white;
   }
+
+  &.golden {
+    color: $color-golden;
+  }
 }
 
 .opensans {
@@ -107,6 +111,10 @@ body::-webkit-scrollbar-thumb {
 
   &.white {
     color: $color-white;
+  }
+  
+  &.golden {
+    color: $color-golden;
   }
 }
 
@@ -127,11 +135,11 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
 
   &:hover {
-    background-color: $color-crimson;
+    background-color: $color-golden;
     color: $color-black;
     transform: scale(0.98);
     transition: .4s ease;
-    border-bottom: 1px solid $color-golden;
+    border-bottom: 1px solid $color-burgundy;
   }
 
   &.white {
@@ -139,11 +147,11 @@ body::-webkit-scrollbar-thumb {
     border-bottom: 1px solid $color-white;
 
     &:hover {
-      background-color: $color-white;
+      background-color: $color-golden;
       color: $color-black;
       transform: scale(0.98);
       transition: .4s ease;
-      border-bottom: 1px solid $color-golden;
+      border-bottom: 1px solid $color-white;
     }
   }
 }
@@ -230,6 +238,10 @@ body::-webkit-scrollbar-thumb {
 
   &.white {
     color: $color-white;
+  }
+
+  &.golden {
+    color: $color-golden;
   }
 }
 

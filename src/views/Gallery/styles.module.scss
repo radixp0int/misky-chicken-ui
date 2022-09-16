@@ -47,7 +47,9 @@
 .gallery_images_card {
     position: relative;
     min-width: 301px;
-    height: 447px;
+    // height: 447px;
+    width: 376px;
+    height: 558px;
     margin-right: 2rem;
     background: $color-black;
 }
@@ -127,7 +129,8 @@
     }
     .gallery_images_card {
         min-width: 400px;
-        height: 547px;
+        width: 512px;
+        height: 760px;
     }
 }
 
