@@ -11,7 +11,7 @@ const Catering = () => (
         <SubHeading title='Catering' />
         <h1 className='headtext_cormorant'>Planning a large gathering and need help?</h1>
         <br/>
-        <p className='opensans'>The Misky Chicken can help! Have us cater your next event, whether large or small, we’ll customize a menu to fit your budget. Be sure to fill us in with all of the details of your event! We believe on making each event special,</p>
+        <p className={`${styles.catering_text} opensans`}>The Misky Chicken can help! Have us cater your next event, whether large or small, we’ll customize a menu to fit your budget. Be sure to fill us in with all of the details of your event! We believe on making each event special,</p>
       </div>
       <div className={`${styles.catering_input} flex_center`}>
         <input

@@ -5,6 +5,7 @@ import styles from './styles.module.scss';
 const About = () => (
   <div className='app_bg app_wrapper section_padding' id='contact'>
     <div className='app_container app_wrapper'>
+      
       <div className={`${styles.contact_info} app_wrapper_info`}>
         <SubHeading title="Contact" color="white" />
         <h1 className='headtext_cormorant golden'>Find Us</h1>
@@ -27,6 +28,7 @@ const About = () => (
           <SocialMedia Color='white' />
         </div>
       </div>
+
       <div className='app_wrapper_img'>
         <div className={`${styles.wrapper_img} img_padding`} >
           <img
@@ -37,6 +39,7 @@ const About = () => (
           />
         </div>
       </div>
+      
     </div>
   </div>
 );

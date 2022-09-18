@@ -9,7 +9,7 @@ import styles from './styles.module.scss';
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
-  const navbarItems = ['About', 'Menu', 'Gallery', 'Catering'];
+  const navbarItems = ['Location', 'Gallery', 'Menu', 'Catering'];
 
   const handleToggle = () => {
     setToggleMenu(prev => !prev);

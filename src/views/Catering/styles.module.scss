@@ -2,13 +2,18 @@
 
 .catering {
     padding: 4rem 4rem;
-    width: 1200px;
+    max-width: 1200px;
     border: 1px solid $color-golden;
     background: $color-white;
     z-index: 2;
 }
 
 .catering_heading {
+    text-align: center;
+}
+
+.catering_text {
+    padding: 0 1rem;
     text-align: center;
 }
 
@@ -19,7 +24,9 @@
 
 .catering_input input,
 textarea {
-    width: 620px;
+    width: 100%;
+    max-width: 1000px;
+    min-width: 280px;
     border: 1px solid $color-golden;
     border-radius: 2px;
     font-size: 1.25rem;
@@ -78,6 +85,11 @@ textarea {
     .catering {
         padding: 2rem 0;
         border: none;
+    }
+
+    .catering_input input,
+    textarea {
+        max-width: 400px;
     }
 }
 
