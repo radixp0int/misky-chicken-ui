@@ -10,20 +10,28 @@ import styles from './styles.module.scss';
 const Gallery = ({ info }) => {
   const galleryImages = [
     {
-      picture: images.gallery01,
+      picture: images.menuItem18,
       title: 'Menu Item 1',
     },
     {
-      picture: images.gallery02,
+      picture: images.menuItem17,
       title: 'Menu Item 2',
     },
     {
-      picture: images.gallery03,
+      picture: images.menuItem4,
       title: 'Menu Item 3',
     },
     {
-      picture: images.gallery04,
+      picture: images.menuItem14,
       title: 'Menu Item 4',
+    },
+    {
+      picture: images.menuItem6,
+      title: 'Menu Item 5',
+    },
+    {
+      picture: images.menuItem8,
+      title: 'Menu Item 6',
     },
   ];
   const scrollRef = useRef(null);
@@ -32,9 +40,9 @@ const Gallery = ({ info }) => {
     const { current } = scrollRef;
 
     if (direction === 'left') {
-      current.scrollLeft -= 300;
+      current.scrollLeft -= 360;
     } else {
-      current.scrollLeft += 300;
+      current.scrollLeft += 360;
     }
   };
 

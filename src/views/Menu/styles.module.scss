@@ -29,7 +29,7 @@
     color: $color-white;
 }
 
-.special_menu_wine,
+.special_menu_logo,
 .special_menu_cocktails {
     flex: 1;
     width: 100%;
@@ -38,9 +38,10 @@
 
 .special_menu_img {
     position: relative;
-    max-width: 410px;
+    max-width: 325px;
     max-height: 330px;
-    margin: 0 2rem;
+    margin: 0 4rem;
+    padding: 0 1rem;
 }
 
 .special_menu_img img {
@@ -63,11 +64,11 @@
 
 @media screen and (min-width: 2000px) {
     .special_menu_img {
-        max-width: 325px;
+        max-width: 400px;
     }
 
     .special_menu_img img {
-        max-height: 460px;
+        max-height: 360px;
     }
 }
 
@@ -79,6 +80,7 @@
     }
 
     .special_menu_img {
+        max-width: 450px;
         margin: 3rem 0;
     }
 }

@@ -17,16 +17,12 @@ const Home = () => {
           <Button name='Explore Menu' path='#menu' />
         </div>
 
-        <div className='app_wrapper_img'>
-          <div className={`${styles.wrapper_img} img_padding`} >
-            <img
-              // width={1000}
-              // height={525}
-              width={450}
-              height={500}
-              src={images.welcome}
+        {/* {/* <div className='app_wrapper_img'> */}
+          <div className={`${styles.wrapper_img}`} >
+            <img       
+              src={images.logoBig}
               alt='Restaurant Food' />
-          </div>
+          {/* </div> */}
         </div>
         
       </div>

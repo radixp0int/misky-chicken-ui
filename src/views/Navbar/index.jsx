@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
 
-// import images from '../../constants/images';
+import images from '../../constants/images';
 import styles from './styles.module.scss';
 
 const Navbar = () => {
@@ -19,8 +19,8 @@ const Navbar = () => {
     <nav className={styles.navbar_container} id='navigation'>
       <Link to='#home' smooth={true} duration={500}>
         <div className={styles.navbar_logo}>
-          {/* <img src={images.gericht} alt='Restaurant Logo' /> */}
-          <p className='cormorant white'>Misky Chicken</p>
+          {/* <img style={{ backgroundColor: 'white', marginRight: '10px' }} src={images.logo} alt='Restaurant Logo' /> */}
+          <p>Misky Chicken</p>
         </div>
       </Link>
 
@@ -36,7 +36,8 @@ const Navbar = () => {
 
       <div className={styles.navbar_login}>
         <p className={`${styles.menu_item} opensans white`}>
-          <a className='cormorant white' href='tel:123-456-7890'>Order Now</a>
+          <a className='cormorant white' href='tel:123-456-7890'>Call</a>
+          <a className='cormorant white' href='https://orders.menuocity.com/a1b4017d-25be-4912-a0e0-b196122c2bc6'>Order </a>
         </p>
       </div>
 

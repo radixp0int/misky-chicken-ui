@@ -23,7 +23,7 @@ const Menu = () => {
             </div>
             {/* {menu && */}
             <div className={styles.special_menu}>
-                <div className={`${styles.special_menu_wine}  flex_center`}>
+                <div className={`${styles.special_menu_logo}  flex_center`}>
                     <p className={styles.special_menu_heading}>Combo Specials</p>
                     <div className={styles.special_menu_items}>
                         {data.wines.map((wine, index) => (
