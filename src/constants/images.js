@@ -7,6 +7,7 @@ import gallery03 from '../assets/gallery03.png';
 import gallery04 from '../assets/gallery04.png';
 import knife from '../assets/knife.png';
 import logo from '../assets/logo.png';
+import logoMenu from '../assets/logoMenu.png';
 import menu from '../assets/menu.png';
 import overlaybg from '../assets/overlaybg.png';
 import spoon from '../assets/spoon.svg';
@@ -34,6 +35,7 @@ export default {
   pollobg,
   knife,
   logo,
+  logoMenu,
   menu,
   overlaybg,
   spoon,

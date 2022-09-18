@@ -1,4 +1,4 @@
-import { Button, SocialMedia, SubHeading } from '../../components';
+import { Button, Map, SocialMedia, SubHeading } from '../../components';
 import { images } from '../../constants';
 import styles from './styles.module.scss';
 
@@ -29,7 +29,7 @@ const About = () => (
         </div>
       </div>
 
-      <div className='app_wrapper_img'>
+      {/* <div className='app_wrapper_img'>
         <div className={`${styles.wrapper_img} img_padding`} >
           <img
             src={images.findus2}
@@ -38,6 +38,10 @@ const About = () => (
             height={550}
           />
         </div>
+      </div> */}
+
+      <div>
+        <Map />
       </div>
       
     </div>

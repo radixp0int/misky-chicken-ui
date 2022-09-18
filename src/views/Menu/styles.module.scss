@@ -38,8 +38,8 @@
 
 .special_menu_img {
     position: relative;
-    width: 410px;
-    height: 550px;
+    max-width: 410px;
+    max-height: 330px;
     margin: 0 2rem;
 }
 
@@ -63,11 +63,11 @@
 
 @media screen and (min-width: 2000px) {
     .special_menu_img {
-        width: 325px;
+        max-width: 325px;
     }
 
     .special_menu_img img {
-        height: 460px;
+        max-height: 460px;
     }
 }
 
