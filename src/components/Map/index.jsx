@@ -6,7 +6,7 @@ const Map = () => {
   return (
     <div className={styles.map_container}>
       <div className={styles.map_wrapper}>
-        <div className="gmap_canvas">
+        <div >
           <iframe
             id="gmap_canvas"
             title='restaurant-map'

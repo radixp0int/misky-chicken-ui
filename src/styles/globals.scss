@@ -280,8 +280,14 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1500px) {
   .app_wrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .app_wrapper.map{
     flex-direction: column;
   }
 
