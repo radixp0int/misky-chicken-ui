@@ -1,15 +1,14 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-scroll";
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
 
-import images from '../../constants/images';
 import styles from './styles.module.scss';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
-  const navbarItems = ['Location', 'Gallery', 'Menu', 'Catering'];
+  const navbarItems = ['About', 'Gallery', 'Menu', 'Catering'];
 
   const handleToggle = () => {
     setToggleMenu(prev => !prev);
@@ -27,7 +26,7 @@ const Navbar = () => {
       <ul className={styles.navbar_links}>
         {navbarItems?.map((item, index) => (
           <li className={`${styles.menu_item} opensans white`} key={index}>
-            <Link to={navbarItems ? `#${item?.toLowerCase()}` : '#contact'}>
+            <Link to={navbarItems ? `#${item?.toLowerCase()}` : '#about'}>
               {item}
             </Link>
           </li>

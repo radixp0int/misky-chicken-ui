@@ -2,7 +2,6 @@ import { FiFacebook, FiInstagram, FiTwitter } from 'react-icons/fi';
 
 import { images } from '../../constants';
 import { SocialMedia } from '../../components';
-import FooterOverlay from './FooterOverlay';
 import styles from './styles.module.scss';
 
 const address = '24640 Southpoint Dr #115, Chantilly, VA 20152';

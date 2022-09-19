@@ -3,7 +3,7 @@ import { images } from '../../constants';
 import styles from './styles.module.scss';
 
 const About = () => (
-  <div className='app_bg app_wrapper section_padding map' id='contact'>
+  <div className='app_bg app_wrapper section_padding map' id='about'>
     <div className='app_container app_wrapper'>
 
       <div className={`${styles.contact_info} app_wrapper_info`}>

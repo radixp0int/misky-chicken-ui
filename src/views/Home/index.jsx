@@ -14,7 +14,7 @@ const Home = () => {
           <SubHeading title={title} />
           <h1 className={styles.header_h1}>{header}</h1>
           <p className={`${styles.header_p} opensans`}>{subHeader}</p>
-          <Button name='Explore Menu' path='#menu' />
+          <Button name='Order Online' path='menu' />
         </div>
 
         {/* {/* <div className='app_wrapper_img'> */}
