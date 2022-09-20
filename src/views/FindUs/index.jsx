@@ -7,7 +7,7 @@ const About = () => (
     <div className='app_container app_wrapper'>
 
       <div className={`${styles.contact_info} app_wrapper_info`}>
-        <SubHeading title="Contact" color="white" />
+        <SubHeading title="Restaurant" color="white" />
         <h1 className='headtext_cormorant golden'>Find Us</h1>
         <div className={`${styles.contact_title} app_wrapper_content`}>
           <p className='opensans white'>Location:</p>

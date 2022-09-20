@@ -3,9 +3,10 @@ import { SubHeading, Button } from '../../components';
 import styles from './styles.module.scss';
 
 const Home = () => {
-  const title = 'Chase The New flavor!'
-  const header = 'The Key To Fine Dining'
-  const subHeader = 'The New Dining Amazing Just Try It!'
+  const title = 'Locally Sourced × Family Crafted'
+  const header = 'PERUVIAN STYLE ROTISSERIE'
+  const subHeader2 = 'The New Dining Amazing Just Try It!'
+  const subHeader = '"The Misky Chicken brings authentic Peruvian food and popular specials to the Chantilly area."'
 
   return (
     <div className={`${styles.header} section_padding`} id='home'>

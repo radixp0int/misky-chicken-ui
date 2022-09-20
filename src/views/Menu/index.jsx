@@ -18,7 +18,7 @@ const Menu = () => {
     return (
         <div id='menu' className={`${styles.special} flex_center section_padding`} >
             <div className={styles.special_title}>
-                <SubHeading title='Menu that fits your pallet' />
+                <SubHeading title='Menu & Specials' />
                 <h1 className='headtext_cormorant'>Today's Special</h1>
             </div>
             {/* {menu && */}

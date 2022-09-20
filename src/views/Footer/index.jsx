@@ -6,7 +6,7 @@ import styles from './styles.module.scss';
 
 const address = '24640 Southpoint Dr #115, Chantilly, VA 20152';
 const telephone = '(703) 828-2300';
-const quote = '"The best Peruvian Chicken is here"';
+const quote = '"To the People and for the people!"';
 const allRightsReserved = 'All Rights Reserved.';
 const year = new Date().getFullYear();
 
@@ -26,13 +26,13 @@ const Footer = () => (
                 <h1 className={styles.footer_headtext}>Misky Chicken</h1>
                 <img
                     src={images.logo}
-                    style={{ backgroundColor: 'white', marginBottom: '10px' }}
+                    style={{ backgroundColor: 'white', marginBottom: '16px' }}
                     height={60}
                     alt='footer logo'
                 />
                 <p className='opensans white'>{quote}</p>
                 <img
-                    src={images.spoon}
+                    src={images.spoonGolden}
                     className='spoon_img'
                     alt='spoon'
                     style={{ marginTop: 15 }}

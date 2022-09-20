@@ -8,6 +8,9 @@ import { SubHeading, Button } from '../../components';
 import styles from './styles.module.scss';
 
 const Gallery = ({ info }) => {
+  const title = 'Gallery Photos By G. Valdez';
+  const galleryText1 = 'Misky Chicken opened to the public in 2017 with the help of three friends and their families. The word "Misky" means "tasty" in the ancestral Quechuan language, which dates to the time of the Incas that reigned over South America. The goal of The Misky Chicken is simple, to bring authentic Peruvian dishes, made the same way it would have been made in Peru.'
+  const galleryText2 = 'Our menu encompasses of Peruvian Style Chicken, other classic Peruvian dishes, and popular specials to fill the appetite of anyone who visit us. Hungry yet? Then make some time in your day, and visit us for a delicious meal. Stuck at work, or want to stay inside? Then let us bring The Misky Chicken your way! Ask us about deliveries and catering, as we offer both to the area.'
   const galleryImages = [
     {
       picture: images.menuItem18,
@@ -49,9 +52,10 @@ const Gallery = ({ info }) => {
   return (
     <div className={`${styles.gallery_container} flex_center`} id='gallery'>
       <div className={styles.gallery_content}>
-        <SubHeading title={info?.[0]?.metadata?.section} />
-        <h1 className='headtext_cormorant'>Photo Gallery</h1>
-        <p className={`${styles.gallery_content_intro} opensans`}>Lorem</p>
+        <SubHeading title={title} />
+        <h1 className='headtext_cormorant'>Why Misky?</h1>
+        <p className={`${styles.gallery_content_intro} opensans`}>{galleryText1}</p>
+        <p className={`${styles.gallery_content_intro} opensans`}>{galleryText2}</p>
         <Button name='View More' path='#menu' />
       </div>
 

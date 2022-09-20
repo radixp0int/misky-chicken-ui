@@ -22,6 +22,7 @@ import logoBig from '../assets/logoBig.webp';
 import logoMenu from '../assets/logoMenu.png';
 import overlaybg from '../assets/overlaybg.png';
 import spoon from '../assets/spoon.svg';
+import spoonGolden from '../assets/spoonGolden.svg';
 import welcome from '../assets/welcome.webp';
 import laurels from '../assets/laurels.png';
 import award01 from '../assets/award01.png';
@@ -57,6 +58,7 @@ export default {
   logoMenu,
   overlaybg,
   spoon,
+  spoonGolden,
   welcome,
   laurels,
   award01,
