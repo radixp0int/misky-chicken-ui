@@ -9,6 +9,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const navbarItems = ['About', 'Gallery', 'Menu', 'Catering'];
+  const onlineOrderURL = 'https://orders.menuocity.com/a1b4017d-25be-4912-a0e0-b196122c2bc6';
 
   const handleToggle = () => {
     setToggleMenu(prev => !prev);
@@ -18,7 +19,6 @@ const Navbar = () => {
     <nav className={styles.navbar_container} id='navigation'>
       <Link to='#home' smooth={true} duration={500}>
         <div className={styles.navbar_logo}>
-          {/* <img style={{ backgroundColor: 'white', marginRight: '10px' }} src={images.logo} alt='Restaurant Logo' /> */}
           <p>Misky Chicken</p>
         </div>
       </Link>
@@ -36,7 +36,7 @@ const Navbar = () => {
       <div className={styles.navbar_login}>
         <p className={`${styles.menu_item} opensans white`}>
           <a className='cormorant white' href='tel:123-456-7890'>Call</a>
-          <a className='cormorant white' href='https://orders.menuocity.com/a1b4017d-25be-4912-a0e0-b196122c2bc6'>Order </a>
+          <a className='cormorant white' href={onlineOrderURL}>Order </a>
         </p>
       </div>
 
@@ -53,6 +53,9 @@ const Navbar = () => {
                   </Link>
                 </li>
               ))}
+              <li onClick={handleToggle}>
+                <a href={onlineOrderURL}>Order Now</a>
+              </li>
             </ul>
           </div>
         )}
