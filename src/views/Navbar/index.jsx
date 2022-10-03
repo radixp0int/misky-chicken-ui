@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
 
+import { images } from '../../constants';
 import styles from './styles.module.scss';
 
 const Navbar = () => {
@@ -19,6 +20,16 @@ const Navbar = () => {
     <nav className={styles.navbar_container} id='navigation'>
       <Link to='#home' smooth={true} duration={500}>
         <div className={styles.navbar_logo}>
+          <img
+            src={images.logoSlanted}
+            style={{
+              backgroundColor: 'white',
+              borderRadius: '10%',
+              padding: '2px 6px',
+              marginRight: '8px',
+            }}
+            alt='footer logo'
+          />
           <p>Misky Chicken</p>
         </div>
       </Link>
@@ -36,7 +47,7 @@ const Navbar = () => {
       <div className={styles.navbar_login}>
         <p className={`${styles.menu_item} opensans white`}>
           <a className='cormorant white' href='tel:123-456-7890'>Call</a>
-          <a className='cormorant white' href={onlineOrderURL}>Order </a>
+          <a className='cormorant white' href={onlineOrderURL}>Order</a>
         </p>
       </div>
 
