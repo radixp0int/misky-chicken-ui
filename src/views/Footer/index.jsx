@@ -26,7 +26,12 @@ const Footer = () => (
                 <h1 className={styles.footer_headtext}>Misky Chicken</h1>
                 <img
                     src={images.logo}
-                    style={{ backgroundColor: 'white', marginBottom: '16px' }}
+                    style={{
+                        backgroundColor: 'white',
+                        marginBottom: '16px',
+                        borderRadius: '10%',
+                        padding: '4px',
+                    }}
                     height={60}
                     alt='footer logo'
                 />

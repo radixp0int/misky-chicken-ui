@@ -15,6 +15,8 @@ import menuItem18 from '../assets/MenuItems/MenuItem18.jpg';
 import logo from '../assets/logo.png';
 import logoBig from '../assets/logoBig.webp';
 import logoMenu from '../assets/logoMenu.png';
+import logoOrder from '../assets/logoOrder.png';
+import logoSlanted from '../assets/logoSlanted.png';
 import spoon from '../assets/spoon.svg';
 import spoonGolden from '../assets/spoonGolden.svg';
 import laurels from '../assets/laurels.png';
@@ -40,6 +42,8 @@ export default {
   logo,
   logoBig,
   logoMenu,
+  logoOrder,
+  logoSlanted,
   spoon,
   spoonGolden,
   laurels,

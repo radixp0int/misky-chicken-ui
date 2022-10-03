@@ -87,7 +87,8 @@
 
 @media screen and (max-width: 650px) {
     .special_menu_img {
-        width: 100%;
+        max-width: 250px;
+        margin: 0;
     }
 
     .special_menu_heading {
