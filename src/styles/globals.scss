@@ -126,7 +126,7 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 1px;
   line-height: 24px;
   font-size: 24px;
-  padding: 0.6rem;
+  padding: 0.7rem;
   border-radius: 1px;
   border: none;
   outline: none;
@@ -140,6 +140,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0.98);
     transition: .4s ease;
     border-bottom: 1px solid $color-burgundy;
+    transform: scale(1.05, 1.05);
   }
 
   &.white {

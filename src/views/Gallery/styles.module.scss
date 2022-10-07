@@ -101,7 +101,8 @@
     margin: 2rem 0;
     max-width: 85%;
     color: $color-black;
-    font-size: 1.25rem;
+    line-height: 1.4;
+    font-size: 1.2rem;
 }
 
 .gallery_arrow_icon {
@@ -150,6 +151,9 @@
 @media screen and (max-width: 850px) {
     .gallery_container {
         padding: 4rem 0 4rem 4rem;
+    }
+    .gallery_content_intro {
+        font-size: 1rem;
     }
 }
 

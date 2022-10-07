@@ -19,12 +19,12 @@ const Menu = () => {
         <div id='menu' className={`${styles.special} flex_center section_padding`} >
             <div className={styles.special_title}>
                 <SubHeading title='Menu & Specials' />
-                <h1 className='headtext_cormorant'>Today's Special</h1>
+                <h1 className='headtext_cormorant'>Today's Specials</h1>
             </div>
             {/* {menu && */}
             <div className={styles.special_menu}>
                 <div className={`${styles.special_menu_logo}  flex_center`}>
-                    <p className={styles.special_menu_heading}>Combo Specials</p>
+                    <p className={styles.special_menu_heading}>Featured Plates</p>
                     <div className={styles.special_menu_items}>
                         {data.wines.map((wine, index) => (
                             <MenuItem
@@ -42,7 +42,7 @@ const Menu = () => {
                 </div>
 
                 <div className={`${styles.special_menu_cocktails} flex_center`}>
-                    <p className={styles.special_menu_heading}>Cocktails</p>
+                    <p className={styles.special_menu_heading}>Combo Specials</p>
                     <div className={styles.special_menu_items}>
                         {data.cocktails.map((cocktail, index) => (
                             <MenuItem
