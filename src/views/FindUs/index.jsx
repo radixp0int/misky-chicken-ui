@@ -13,7 +13,9 @@ const About = () => (
           <p className='opensans white'>Location:</p>
           <br />
           <div className='app_wrapper_content'>
-            <p className={`${styles.contact_location} cormorant white`}>24640 Southpoint Dr. Suite 115 Chantilly, VA 20152</p>
+            <p className={`${styles.contact_location} cormorant white`}>
+              24640 Southpoint Dr. Suite 115 <br /> Chantilly, VA 20152
+            </p>
           </div>
           <p className='opensans white'>Hours:</p>
           <div className='app_wrapper_content'>

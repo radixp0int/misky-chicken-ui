@@ -135,12 +135,12 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
 
   &:hover {
-    background-color: $color-golden;
-    color: $color-black;
-    transform: scale(0.98);
+    background-color: $color-burgundy;
+    color: $color-white;
+    transform: scale(0.96);
     transition: .4s ease;
-    border-bottom: 1px solid $color-burgundy;
-    transform: scale(1.05, 1.05);
+    font-weight: 700;
+    border-bottom: 1px solid $color-golden;
   }
 
   &.white {
@@ -148,11 +148,12 @@ body::-webkit-scrollbar-thumb {
     border-bottom: 1px solid $color-white;
 
     &:hover {
-      background-color: $color-golden;
-      color: $color-black;
-      transform: scale(0.98);
+      background-color: $color-white;
+      color: $color-burgundy;
+      transform: scale(0.96);
       transition: .4s ease;
-      border-bottom: 1px solid $color-white;
+      font-weight: 700;
+      border-bottom: 1px solid $color-golden;
     }
   }
 }
