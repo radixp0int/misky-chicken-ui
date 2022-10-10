@@ -13,13 +13,10 @@ import menuItem16 from '../assets/MenuItems/MenuItem16.jpg';
 import menuItem17 from '../assets/MenuItems/MenuItem17.jpg';
 import menuItem18 from '../assets/MenuItems/MenuItem18.jpg';
 import logo from '../assets/logo.png';
-import logoBig from '../assets/logoBig.webp';
-import logoMenu from '../assets/logoMenu.png';
 import logoOrder from '../assets/logoOrder.png';
 import logoSlanted from '../assets/logoSlanted.png';
 import spoon from '../assets/spoon.svg';
 import spoonGolden from '../assets/spoonGolden.svg';
-import laurels from '../assets/laurels.png';
 import quote from '../assets/quote.png';
 import pollobg from '../assets/pollo-norte.jpg';
 
@@ -40,12 +37,9 @@ export default {
   menuItem18,
   pollobg,
   logo,
-  logoBig,
-  logoMenu,
   logoOrder,
   logoSlanted,
   spoon,
   spoonGolden,
-  laurels,
   quote,
 };

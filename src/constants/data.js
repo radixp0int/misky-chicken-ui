@@ -1,6 +1,13 @@
-const orderOnline = 'https://orders.menuocity.com/a1b4017d-25be-4912-a0e0-b196122c2bc6';
+const address = '24640 Southpoint Dr #115,';
+const addressLine2 = 'Chantilly, VA 20152';
 
-const telephone = '1-703-828-2300';
+const telephone = '703-828-2300';
+
+const weekdayHours = '10AM - 10PM';
+
+const weekendHours = '11AM - 8PM';
+
+const orderOnline = 'https://orders.menuocity.com/a1b4017d-25be-4912-a0e0-b196122c2bc6';
 
 const wines = [
   {
@@ -124,4 +131,15 @@ const combos = [
   },
 ]
 
-export default { orderOnline, telephone, menu, combos, wines, cocktails };
+export default {
+  address,
+  addressLine2,
+  orderOnline,
+  telephone,
+  weekdayHours,
+  weekendHours,
+  menu,
+  combos,
+  wines,
+  cocktails
+};

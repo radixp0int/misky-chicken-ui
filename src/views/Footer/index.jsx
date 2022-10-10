@@ -1,11 +1,7 @@
-import { FiFacebook, FiInstagram, FiTwitter } from 'react-icons/fi';
-
-import { images } from '../../constants';
+import { images, data } from '../../constants';
 import { SocialMedia } from '../../components';
 import styles from './styles.module.scss';
 
-const address = '24640 Southpoint Dr #115, Chantilly, VA 20152';
-const telephone = '(703) 828-2300';
 const quote = '"To the People and for the people!"';
 const allRightsReserved = 'All Rights Reserved.';
 const year = new Date().getFullYear();
@@ -18,9 +14,9 @@ const Footer = () => (
         <div className={styles.footer_links}>
             <div className={styles.footer_links_contact}>
                 <h1 className={styles.footer_headtext}>Contact Us</h1>
-                <p className='opensans white'>{address}</p>
+                <p className='opensans white'>{data.address}<br />{data.addressLine2}</p>
                 <br />
-                <p className='opensans white'>{telephone}</p>
+                <p className='opensans white'>{data.telephone}</p>
             </div>
             <div className={styles.footer_links_logo}>
                 <h1 className={styles.footer_headtext}>Misky Chicken</h1>
@@ -48,9 +44,9 @@ const Footer = () => (
             </div>
             <div className={styles.footer_links_work}>
                 <h1 className={styles.footer_headtext}>Hours</h1>
-                <p className='opensans white'>Monday - Friday: 10AM - 10PM</p>
+                <p className='opensans white'>Monday - Friday: {data.weekdayHours}</p>
                 <br />
-                <p className='opensans white'>Saturday - Sunday: 11AM - 8PM</p>
+                <p className='opensans white'>Saturday - Sunday: {data.weekendHours}</p>
             </div>
         </div>
         <div className={styles.footer_copyright}>

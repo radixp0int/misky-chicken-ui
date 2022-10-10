@@ -22,7 +22,7 @@ const Home = () => {
         {/* {/* <div className='app_wrapper_img'> */}
           <div className={`${styles.wrapper_img}`} >
             <img       
-              src={images.logoBig}
+              src={images.logo}
               alt='Restaurant Food' />
           {/* </div> */}
         </div>
