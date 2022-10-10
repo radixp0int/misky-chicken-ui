@@ -1,9 +1,9 @@
 import { Button, Map, SocialMedia, SubHeading } from '../../components';
-import { images } from '../../constants';
+import { data } from '../../constants';
 import styles from './styles.module.scss';
 
 const About = () => (
-  <div className='app_bg app_wrapper section_padding map' id='about'>
+  <div className='app_bg app_wrapper section_padding map' id='restaurant'>
     <div className='app_container app_wrapper'>
 
       <div className={`${styles.contact_info} app_wrapper_info`}>
@@ -22,7 +22,7 @@ const About = () => (
             <p className={`${styles.contact_hours} cormorant white`}>Mon - Fri: 10:00AM - 10:00PM</p>
             <p className={`${styles.contact_hours} cormorant white`}>Sat - Sun: 11:00AM - 8:00PM</p>
           </div>
-          <button type='button' className='custom_button white'>Call Us</button>
+          <Button name='Call Us' href={data.telephone} color='white' />
         </div>
         <h1 className={`${styles.follow_title} headtext_cormorant golden`}>Social Media
         </h1>

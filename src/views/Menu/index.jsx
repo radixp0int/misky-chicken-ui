@@ -18,7 +18,7 @@ const Menu = () => {
     return (
         <div id='menu' className={`${styles.special} flex_center section_padding`} >
             <div className={styles.special_title}>
-                <SubHeading title='Menu & Specials' />
+                <SubHeading title='Menu & Dishes' />
                 {/* <h1 className='headtext_cormorant'>Today's Specials</h1> */}
             </div>
             {/* {menu && */}
@@ -54,7 +54,7 @@ const Menu = () => {
                     </div>
                 </div>
             </div>
-            <Button name='View More' path='#gallery' />
+            <Button name='View Catering' path='#catering' />
         </div>
     )
 }

@@ -1,4 +1,6 @@
-import images from './images';
+const orderOnline = 'https://orders.menuocity.com/a1b4017d-25be-4912-a0e0-b196122c2bc6';
+
+const telephone = '1-703-828-2300';
 
 const wines = [
   {
@@ -53,29 +55,6 @@ const cocktails = [
     title: 'Negroni',
     price: '$26',
     tags: 'Gin | Sweet Vermouth | Campari | Orange garnish',
-  },
-];
-
-const awards = [
-  {
-    imgUrl: images.award02,
-    title: 'Bib Gourmond',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
-  },
-  {
-    imgUrl: images.award01,
-    title: 'Rising Star',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
-  },
-  {
-    imgUrl: images.award05,
-    title: 'AA Hospitality',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
-  },
-  {
-    imgUrl: images.award03,
-    title: 'Outstanding Chef',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
   },
 ];
 
@@ -145,4 +124,4 @@ const combos = [
   },
 ]
 
-export default { menu, combos, wines, cocktails, awards };
+export default { orderOnline, telephone, menu, combos, wines, cocktails };

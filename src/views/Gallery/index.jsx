@@ -1,5 +1,4 @@
 import { useRef } from 'react';
-import { Link } from 'react-scroll'
 import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 
 import { images } from '../../constants';
@@ -56,7 +55,7 @@ const Gallery = ({ info }) => {
         <h1 className='headtext_cormorant'>Why Misky?</h1>
         <p className={`${styles.gallery_content_intro}`}>{galleryContent1}</p>
         <p className={`${styles.gallery_content_intro}`}>{galleryContent2}</p>
-        <Button name='View More' path='#menu' />
+        <Button name='View Menu' path='#menu' />
       </div>
 
       <div className={styles.gallery_images}>

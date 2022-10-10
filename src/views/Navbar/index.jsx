@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
-import { Link } from "react-scroll";
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
 
-import { images } from '../../constants';
+import { data, images } from '../../constants';
 import styles from './styles.module.scss';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
-  const navbarItems = ['About', 'Gallery', 'Menu', 'Catering'];
-  const onlineOrderURL = 'https://orders.menuocity.com/a1b4017d-25be-4912-a0e0-b196122c2bc6';
+  const navbarItems = ['Restaurant', 'Gallery', 'Menu', 'Catering'];
 
   const handleToggle = () => {
     setToggleMenu(prev => !prev);
@@ -18,7 +16,7 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar_container} id='navigation'>
-      <Link to='#home' smooth={true} duration={500}>
+      <a href='#home'>
         <div className={styles.navbar_logo}>
           <img
             src={images.logoSlanted}
@@ -32,22 +30,22 @@ const Navbar = () => {
           />
           <p>Misky Chicken</p>
         </div>
-      </Link>
+      </a>
 
       <ul className={styles.navbar_links}>
         {navbarItems?.map((item, index) => (
           <li className={`${styles.menu_item} opensans white`} key={index}>
-            <Link to={navbarItems ? `#${item?.toLowerCase()}` : '#about'}>
+            <a href={navbarItems ? `#${item?.toLowerCase()}` : '#menu'}>
               {item}
-            </Link>
+            </a>
           </li>
         ))}
       </ul>
 
       <div className={styles.navbar_login}>
         <p className={`${styles.menu_item} opensans white`}>
-          <a className='cormorant white' href='tel:123-456-7890'>Call</a>
-          <a className='cormorant white' href={onlineOrderURL}>Order</a>
+          <a className='cormorant white' href={`tel:${data.telephone}`}>Call</a>
+          <a className='cormorant white' href={data.orderOnline}>Order</a>
         </p>
       </div>
 
@@ -59,13 +57,13 @@ const Navbar = () => {
             <ul className={styles.navbar_smallscreen_links}>
               {navbarItems?.map((item, index) => (
                 <li onClick={handleToggle} key={index}>
-                  <Link to={navbarItems ? `#${item.toLowerCase()}` : '#contact'}>
+                  <a href={navbarItems ? `#${item.toLowerCase()}` : '#contact'}>
                     {item}
-                  </Link>
+                  </a>
                 </li>
               ))}
               <li onClick={handleToggle}>
-                <a href={onlineOrderURL}>Order Now</a>
+                <a href={data.orderOnline}>Order Now</a>
               </li>
             </ul>
           </div>

@@ -1,5 +1,6 @@
 import images from '../../constants/images';
 import { SubHeading, Button } from '../../components';
+import { data } from '../../constants';
 import styles from './styles.module.scss';
 
 const Home = () => {
@@ -15,7 +16,7 @@ const Home = () => {
           <SubHeading title={title} />
           <h1 className={styles.header_h1}>{header}</h1>
           <p className={`${styles.header_p} opensans`}>{subHeader}</p>
-          <Button name='Order Online' path='menu' />
+          <Button name='Order Online' path={data.orderOnline} />
         </div>
 
         {/* {/* <div className='app_wrapper_img'> */}

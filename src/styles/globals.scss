@@ -17,6 +17,7 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -145,7 +146,7 @@ body::-webkit-scrollbar-thumb {
 
   &.white {
     color: $color-white;
-    border-bottom: 1px solid $color-white;
+    border-bottom: 1px solid $color-golden;
 
     &:hover {
       background-color: $color-white;
