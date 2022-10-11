@@ -15,7 +15,6 @@
 .video_overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.05);
 }
 
 .video_overlay_circle {
@@ -34,10 +33,10 @@
 }
 
 .video_icon {
-  color: $color-golden;
-  font-size: 40px;
+  color: $color-white;
+  font-size: 30px;
 
   @media screen and (min-width: 1000px) {
-    font-size: 80px;
+    font-size: 60px;
   }
 }

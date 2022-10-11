@@ -5,7 +5,7 @@ import { MdOutlineRestaurantMenu } from 'react-icons/md';
 import { data, images } from '../../constants';
 import styles from './styles.module.scss';
 
-const Navbar = () => {
+const Navbar = ({ restaurant }) => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const navbarItems = ['Restaurant', 'Gallery', 'Menu', 'Catering'];
@@ -45,7 +45,7 @@ const Navbar = () => {
       <div className={styles.navbar_login}>
         <p className={`${styles.menu_item} opensans white`}>
           <a className='cormorant white' href={`tel:${data.telephone}`}>Call</a>
-          <a className='cormorant white' href={data.orderOnline}>Order</a>
+          <a className='cormorant white' href={restaurant[0]?.orderOnlineUrl}>Order</a>
         </p>
       </div>
 
@@ -57,13 +57,13 @@ const Navbar = () => {
             <ul className={styles.navbar_smallscreen_links}>
               {navbarItems?.map((item, index) => (
                 <li onClick={handleToggle} key={index}>
-                  <a href={navbarItems ? `#${item.toLowerCase()}` : '#contact'}>
+                  <a href={navbarItems ? `#${item.toLowerCase()}` : '#restaurant'}>
                     {item}
                   </a>
                 </li>
               ))}
               <li onClick={handleToggle}>
-                <a href={data.orderOnline}>Order Now</a>
+                <a href={restaurant[0]?.orderOnlineUrl}>Order Now</a>
               </li>
             </ul>
           </div>
