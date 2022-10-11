@@ -6,15 +6,7 @@ import { images, data } from '../../constants';
 import styles from './styles.module.scss';
 
 const Menu = () => {
-    // const food = chooseByType(info, 'food')
-    // const drink = chooseByType(info, 'drink')
 
-    // const chooseByType = (data, slugName) => {
-    //     if (data && slugName) {
-    //         const chooseBySlug = data?.filter(content => Object.values(content).includes(slugName));
-    //         return chooseBySlug ? chooseBySlug[0] : [];
-    //     }
-    // }
     return (
         <div id='menu' className={`${styles.special} flex_center section_padding`} >
             <div className={styles.special_title}>
@@ -26,12 +18,13 @@ const Menu = () => {
                 <div className={`${styles.special_menu_logo}  flex_center`}>
                     <p className={styles.special_menu_heading}>Featured Plates</p>
                     <div className={styles.special_menu_items}>
-                        {data.wines.map((wine, index) => (
+                        {data.menu.map((dish, index) => (
                             <MenuItem
                                 key={'leftitem-' + index}
-                                title={wine.title}
-                                price={wine.price}
-                                tags={wine.tags} />
+                                title={dish.name}
+                                price={dish.price}
+                                tags={dish.description}
+                            />
                         ))}
                     </div>
                 </div>
@@ -44,12 +37,12 @@ const Menu = () => {
                 <div className={`${styles.special_menu_cocktails} flex_center`}>
                     <p className={styles.special_menu_heading}>Combo Specials</p>
                     <div className={styles.special_menu_items}>
-                        {data.cocktails.map((cocktail, index) => (
+                        {data.combos.map((special, index) => (
                             <MenuItem
                                 key={'rightitem-' + index}
-                                title={cocktail.title}
-                                price={cocktail.price}
-                                tags={cocktail.tags} />
+                                title={special.name}
+                                price={special.price}
+                                tags={special.description} />
                         ))}
                     </div>
                 </div>
