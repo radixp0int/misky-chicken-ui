@@ -21,9 +21,9 @@ const menu = [
     options: 'Weekdays',
   },
   {
-    name: 'Papa Rellena',
-    description: 'I am a good web developer.',
-    price: 9.99,
+    name: 'Salchipapas',
+    description: 'Chunks of hotdog served with french fries and a variety of house sauces.',
+    price: 5.69,
     options: 'All-Week'
   },
   {
