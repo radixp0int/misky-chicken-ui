@@ -27,13 +27,13 @@
   cursor: pointer;
 
   @media screen and (min-width: 1000px) {
-    width: 350px;
-    height: 350px;
+    width: 325px;
+    height: 325px;
   }
 
-  @media screen and (max-width: 2000px) {
-    width: 500px;
-    height: 500px;
+  @media screen and (min-width: 2000px) {
+    width: 550px;
+    height: 550px;
   }
 }
 

@@ -51,7 +51,7 @@ const Menu = ({ date }) => {
                     </div>
                 </div>
 
-                <div className={styles.special_menu_img}>
+                <div className={`${styles.special_menu_img} flex_center`}>
                     <img src={images.logo} alt='menu' />
                 </div>
 

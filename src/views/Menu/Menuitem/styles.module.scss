@@ -19,6 +19,9 @@
         .menuitem_title {
             color: $color-golden;
         }
+        .menuitem_dash {
+            background-color: $color-golden;
+        }
     }
 }
 
@@ -46,7 +49,7 @@
 .menuitem_dash {
     width: 90px;
     height: 1px;
-    background: $color-golden;
+    background: $color-burgundy;
     margin: 0 1rem;
 }
 
