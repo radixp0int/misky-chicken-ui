@@ -8,11 +8,11 @@ const MenuItem = ({ title, price, tags }) => (
 			</div>
 			<div className={styles.menuitem_dash} />
 			<div className={styles.menuitem_price}>
-				<p className='cormorant'>{price}</p>
+				<p className='cormorant'>${price}</p>
 			</div>
 		</div>
 		<div className={styles.menuitem_sub}>
-			<p className={`${styles.menuitem_tag} opensans`}>{tags}</p>
+			<p className={`${styles.menuitem_tag} opensans menu`}>{tags}</p>
 		</div>
 	</div>
 );

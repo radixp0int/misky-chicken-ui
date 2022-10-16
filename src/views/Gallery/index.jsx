@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
+import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 
 import { images } from '../../constants';
 
@@ -67,7 +67,6 @@ const Gallery = ({ info }) => {
                 <div className={`${styles.gallery_images_card} flex_center`} key={index}>
                   <img src={picture} layout='fill' alt='gallery' />
                   <div className={styles.gallery_image_icon}>
-                    <BsInstagram />
                     <h3>{title}</h3>
                   </div>
                 </div>

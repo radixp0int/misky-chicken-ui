@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { urlFor, client } from './sanity';
+import { client } from './sanity';
 
 import {
   Navbar,
@@ -15,12 +15,15 @@ import {
 import './styles/globals.scss'
 
 const App = () => {
-
+  const date = new Date();
   const [restaurant, setRestaurant] = useState({});
+
   useEffect(() => {
     const query = '*[_type == "restaurant"]';
+
     client.fetch(query)
       .then((data) => { setRestaurant(data) })
+      .catch(console.error);
   }, [setRestaurant]);
 
   return (
@@ -28,11 +31,11 @@ const App = () => {
       <Navbar restaurant={restaurant} />
       <Home restaurant={restaurant} />
       <VideoIntro />
-      <Restaurant />
+      <Restaurant restaurant={restaurant} />
       <Gallery />
-      <Menu />
+      <Menu date={date} />
       <Catering />
-      <Footer restaurant={restaurant} />
+      <Footer restaurant={restaurant} date={date} />
     </>
   )
 }

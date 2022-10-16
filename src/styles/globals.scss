@@ -60,6 +60,7 @@ body::-webkit-scrollbar-thumb {
     -webkit-transform: translateY(-25%);
     transform: translateY(-25%);
   }
+
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -71,6 +72,7 @@ body::-webkit-scrollbar-thumb {
     -webkit-transform: translateY(-25%);
     transform: translateY(-25%);
   }
+
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -113,9 +115,13 @@ body::-webkit-scrollbar-thumb {
   &.white {
     color: $color-white;
   }
-  
+
   &.golden {
     color: $color-golden;
+  }
+
+  &.menu {
+    font-size: 19px;
   }
 }
 
@@ -205,26 +211,26 @@ body::-webkit-scrollbar-thumb {
   margin-left: 2rem;
 
   &::before {
-      content: '';
-      width: 60%;
-      height: 60%;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      z-index: 1;
-      background: $color-golden no-repeat center;
-    }
-  
-    &::after {
-      content: '';
-      width: 60%;
-      height: 60%;
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 1;
-      background: $color-golden no-repeat center;
-    }
+    content: '';
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: $color-golden no-repeat center;
+  }
+
+  &::after {
+    content: '';
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background: $color-golden no-repeat center;
+  }
 }
 
 .app_wrapper_img_reverse {
@@ -265,7 +271,6 @@ body::-webkit-scrollbar-thumb {
     font-size: 32px;
   }
 
-
   .cormorant {
     line-height: 28px;
     font-size: 32px;
@@ -282,6 +287,13 @@ body::-webkit-scrollbar-thumb {
   .app_wrapper {
     gap: 8rem;
   }
+
+  .opensans {
+    &.menu {
+      font-size: 21px;
+      line-height: 32px;
+    }
+  }
 }
 
 @media screen and (max-width: 1500px) {
@@ -291,7 +303,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media screen and (max-width: 1150px) {
-  .app_wrapper.map{
+  .app_wrapper.map {
     flex-direction: column;
   }
 
@@ -318,13 +330,17 @@ body::-webkit-scrollbar-thumb {
   .section_padding {
     padding: 4rem 2rem;
   }
-  
+
   .cormorant {
     font-size: 20px;
   }
 
   .opensans {
     font-size: 18px;
+
+    &.menu {
+      font-size: 16px;
+    }
   }
 
   .app_wrapper {

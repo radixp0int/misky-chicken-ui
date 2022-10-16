@@ -17,12 +17,10 @@ const Home = ({ restaurant }) => {
           <Button name='Order Online' path={restaurant[0]?.orderOnlineUrl} />
         </div>
 
-        {/* {/* <div className='app_wrapper_img'> */}
         <div className={`${styles.wrapper_img}`} >
           <img
             src={images.logo}
             alt='Restaurant Food' />
-          {/* </div> */}
         </div>
 
       </div>

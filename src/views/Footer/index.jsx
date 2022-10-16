@@ -6,9 +6,8 @@ import { SocialMedia } from '../../components';
 import styles from './styles.module.scss';
 
 const allRightsReserved = 'All Rights Reserved.';
-const year = new Date().getFullYear();
 
-const Footer = ({ restaurant }) => {
+const Footer = ({ restaurant, date }) => {
 
     return (
         <footer className={`${styles.footer} section_padding`}>
@@ -16,7 +15,10 @@ const Footer = ({ restaurant }) => {
             <div className={styles.footer_links}>
                 <div className={styles.footer_links_contact}>
                     <h1 className={styles.footer_headtext}>Contact Us</h1>
-                    <p className='opensans white'>{restaurant[0]?.address}</p>
+                    <p className='opensans white'>
+                        {restaurant[0]?.addressLine1}                    <br />
+                        {restaurant[0]?.addressLine2}
+                    </p>
                     <br />
                     <p className='opensans white'>{restaurant[0]?.telephone}</p>
                 </div>
@@ -52,7 +54,7 @@ const Footer = ({ restaurant }) => {
                 </div>
             </div>
             <div className={styles.footer_copyright}>
-                <p className='opensans golden'>{`Misky Chicken ©${year}. ${allRightsReserved}`}</p>
+                <p className='opensans golden'>{`Misky Chicken ©${date.getFullYear()}. ${allRightsReserved}`}</p>
             </div>
         </footer>
     )

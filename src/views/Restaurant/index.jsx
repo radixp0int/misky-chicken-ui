@@ -1,8 +1,7 @@
 import { Button, Map, SocialMedia, SubHeading } from '../../components';
-import { data } from '../../constants';
 import styles from './styles.module.scss';
 
-const About = () => (
+const About = ({ restaurant }) => (
   <div className='app_bg app_wrapper section_padding map' id='restaurant'>
     <div className='app_container app_wrapper'>
 
@@ -14,15 +13,16 @@ const About = () => (
           <br />
           <div className='app_wrapper_content'>
             <p className={`${styles.contact_location} cormorant white`}>
-              24640 Southpoint Dr. Suite 115 <br /> Chantilly, VA 20152
+              {restaurant[0]?.addressLine1} <br /> {restaurant[0]?.addressLine2}
             </p>
           </div>
           <p className='opensans white'>Hours:</p>
           <div className='app_wrapper_content'>
-            <p className={`${styles.contact_hours} cormorant white`}>Mon - Fri: 10:00AM - 10:00PM</p>
-            <p className={`${styles.contact_hours} cormorant white`}>Sat - Sun: 11:00AM - 8:00PM</p>
+            <p className={`${styles.contact_hours} cormorant white`}>Mon - Fri: {restaurant[0]?.weekdayHours}</p>
+            <p className={`${styles.contact_hours} cormorant white`}>Sat - Sun: {restaurant[0]?.weekendHours}</p>
           </div>
-          <Button name='Call Us' href={data.telephone} color='white' />
+          <br />
+          <Button name='Call Us' href={restaurant[0]?.telephone} color='white' />
         </div>
         <h1 className={`${styles.follow_title} headtext_cormorant golden`}>Social Media
         </h1>

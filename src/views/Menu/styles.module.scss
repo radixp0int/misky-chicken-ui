@@ -41,7 +41,7 @@
     position: relative;
     max-width: 325px;
     max-height: 330px;
-    margin: 0 4rem;
+    margin: 10rem 2rem 0;
     padding: 1rem 1rem 4rem;
 }
 
@@ -66,6 +66,7 @@
 @media screen and (min-width: 2000px) {
     .special_menu_img {
         max-width: 400px;
+        margin-top: 8rem;
     }
 
     .special_menu_img img {

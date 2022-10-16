@@ -32,8 +32,7 @@ const VideoIntro = () => {
         loop
         muted
       />
-        {/* <source src={url?.metadata?.video?.imgix_url} type="video/mp4" /> */}
-      {/* </video> */}
+
       <div className={`${styles.video_overlay} flex_center`}>
         <button
           className={`${styles.video_overlay_circle} flex_center`}

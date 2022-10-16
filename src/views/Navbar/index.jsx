@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
 
-import { data, images } from '../../constants';
+import { images } from '../../constants';
 import styles from './styles.module.scss';
 
 const Navbar = ({ restaurant }) => {
@@ -44,7 +44,7 @@ const Navbar = ({ restaurant }) => {
 
       <div className={styles.navbar_login}>
         <p className={`${styles.menu_item} opensans white`}>
-          <a className='cormorant white' href={`tel:${data.telephone}`}>Call</a>
+          <a className='cormorant white' href={`tel:${restaurant[0]?.telephone}`}>Call</a>
           <a className='cormorant white' href={restaurant[0]?.orderOnlineUrl}>Order</a>
         </p>
       </div>
