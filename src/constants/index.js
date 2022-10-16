@@ -1,4 +1,5 @@
 import images from './images';
 import restaurant from '../assets/restaurant.mp4';
+import content from './content';
 
-export { images, restaurant };
+export { content, images, restaurant };

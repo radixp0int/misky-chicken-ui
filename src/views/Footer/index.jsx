@@ -1,6 +1,3 @@
-import { useState, useEffect } from 'react';
-import { urlFor, client } from '../../sanity';
-
 import { images } from '../../constants';
 import { SocialMedia } from '../../components';
 import styles from './styles.module.scss';
@@ -16,7 +13,8 @@ const Footer = ({ restaurant, date }) => {
                 <div className={styles.footer_links_contact}>
                     <h1 className={styles.footer_headtext}>Contact Us</h1>
                     <p className='opensans white'>
-                        {restaurant[0]?.addressLine1}                    <br />
+                        {restaurant[0]?.addressLine1}
+                        <br />
                         {restaurant[0]?.addressLine2}
                     </p>
                     <br />
