@@ -17,8 +17,6 @@ import logoOrder from '../assets/logoOrder.png';
 import logoSlanted from '../assets/logoSlanted.png';
 import spoon from '../assets/spoon.svg';
 import spoonGolden from '../assets/spoonGolden.svg';
-import quote from '../assets/quote.png';
-import pollobg from '../assets/pollo-norte.jpg';
 
 export default {
   menuItem1,
@@ -35,11 +33,9 @@ export default {
   menuItem16,
   menuItem17,
   menuItem18,
-  pollobg,
   logo,
   logoOrder,
   logoSlanted,
   spoon,
   spoonGolden,
-  quote,
 };
