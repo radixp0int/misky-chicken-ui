@@ -6,8 +6,8 @@ const header = 'PERUVIAN STYLE ROTISSERIE'
 const subHeader = '"The Misky Chicken brings authentic Peruvian food and popular specials to the Chantilly area."'
 
 /* Catering */
-const cateringHeader = 'Planning a large gathering and need help?'
-const caterMessage = 'The Misky Chicken can help! Have us cater your next event, whether large or small, we’ll customize a menu to fit your budget. Be sure to fill us in with all of the details of your event! We believe on making each event special.'
+const cateringHeader = 'Planning a large gathering?'
+const caterMessage = 'The Misky Chicken can help! Have us cater your next event, whether large or small, we’ll customize a menu to fit your budget. We believe on making each event special.'
 
 /* Gallery */
 const galleryContent1 = 'Misky Chicken opened to the public in 2017 with the help of three friends and their families. The word "Misky" means "tasty" in the ancestral Quechuan language, which dates to the time of the Incas that reigned over South America. The goal of The Misky Chicken is simple, to bring authentic Peruvian dishes, made the same way it would have been made in Peru.'

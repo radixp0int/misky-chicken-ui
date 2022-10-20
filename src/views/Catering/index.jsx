@@ -19,6 +19,7 @@ const Catering = () => {
 			process.env.REACT_APP_PUBLIC_KEY,
 		)
 			.then((result) => {
+				form.current.reset();
 				alert("Thank you for contacting Misky Chicken!")
 			}, (error) => {
 				console.log(error.text);
@@ -41,27 +42,35 @@ const Catering = () => {
 				>
 					<input
 						type='text'
-						placeholder='Enter your Name.'
+						required
 						name="from_name"
 						autoComplete='off'
+						placeholder='Enter a Name*'
 					/>
 					<input
 						type="text"
-						placeholder='Enter Phone Number'
+						required
 						name='from_phone'
-						minlength='10'
 						autoComplete='off'
+						placeholder='Enter a Phone Number*'
+					/>
+					<input
+						type="text"
+						name='from_email'
+						autoComplete='off'
+						placeholder='Enter an Email Address.'
 					/>
 					<textarea
 						className={`${styles.catering_textarea} flex_center`}
 						name='message'
-						rows="10"
-						placeholder='Enter Catering Needs'>
+						rows="9"
+						placeholder='Tell us the catering needs for your event*'>
 					</textarea>
 					<br />
 					<button
 						type="submit"
 						value="Send"
+						required
 						className='custom_button'>
 						Send Email
 					</button>
