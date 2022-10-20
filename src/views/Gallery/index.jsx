@@ -28,7 +28,7 @@ const Gallery = () => {
         <h1 className='headtext_cormorant'>Why Misky?</h1>
         <p className={`${styles.gallery_content_intro}`}>{content.galleryContent1}</p>
         <p className={`${styles.gallery_content_intro}`}>{content.galleryContent2}</p>
-        <Button name='View Menu' path='#menu' />
+        <Button name='View Menu' href='#menu' />
       </div>
 
       <div className={styles.gallery_images}>

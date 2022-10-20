@@ -22,7 +22,7 @@ const About = ({ restaurant }) => (
             <p className={`${styles.contact_hours} cormorant white`}>Sat - Sun: {restaurant[0]?.weekendHours}</p>
           </div>
           <br />
-          <Button name='Call Us' href={restaurant[0]?.telephone} color='white' />
+          <Button name='Call Us' href={`tel:${restaurant[0]?.telephone}`} color='white' />
         </div>
         <h1 className={`${styles.follow_title} headtext_cormorant golden`}>Social Media
         </h1>

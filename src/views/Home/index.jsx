@@ -11,7 +11,7 @@ const Home = ({ restaurant }) => {
           <SubHeading title={content.title} />
           <h1 className={styles.header_h1}>{content.header}</h1>
           <p className={`${styles.header_p} opensans`}>{content.subHeader}</p>
-          <Button name='Order Online' path={restaurant[0]?.orderOnlineUrl} />
+          <Button name='Order Online' href={restaurant[0]?.orderOnlineUrl} />
         </div>
 
         <div className={`${styles.wrapper_img}`} >

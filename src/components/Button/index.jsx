@@ -1,7 +1,7 @@
 
-const Button = ({ name, path, color = '' }) => {
+const Button = ({ name, href, color = '' }) => {
   return (
-    <a href={path}>
+    <a href={href}>
       <button type='button' className={`custom_button ${color}`}>{name}</button>
     </a>
   )

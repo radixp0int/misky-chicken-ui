@@ -68,7 +68,7 @@ const Menu = ({ date }) => {
                     </div>
                 </div>
             </div>
-            <Button name='View Catering' path='#catering' />
+            <Button name='View Catering' href='#catering' />
         </div>
     )
 }
