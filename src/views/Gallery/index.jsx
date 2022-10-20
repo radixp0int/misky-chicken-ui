@@ -37,7 +37,7 @@ const Gallery = () => {
             <div className={`${styles.gallery_images_card} flex_center`} key={index}>
               <img src={picture} layout='fill' alt='gallery' />
               <div className={styles.gallery_image_icon}>
-                <h3>{title}</h3>
+                <p className='opensans white' Style="font-size: 1.5rem; font-weight: bold">{title}</p>
               </div>
             </div>
           ))}

@@ -37,6 +37,8 @@ const VideoIntro = () => {
         <button
           className={`${styles.video_overlay_circle} flex_center`}
           onClick={handlePlay}
+          aria-label='Play Video'
+          aria-pressed='false'
         >
           {playVideo ? (
             <BsPauseFill className={styles.video_icon} />
