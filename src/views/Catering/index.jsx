@@ -19,7 +19,7 @@ const Catering = () => {
 			process.env.REACT_APP_PUBLIC_KEY,
 		)
 			.then((result) => {
-				console.log(result.text);
+				alert("Thank you for contacting Misky Chicken!")
 			}, (error) => {
 				console.log(error.text);
 			});
@@ -34,7 +34,11 @@ const Catering = () => {
 					<p className={`${styles.catering_text} opensans`}>{content.caterMessage}</p>
 				</div>
 
-				<form ref={form} onSubmit={sendEmail} className={`${styles.catering_input} flex_center`}>
+				<form
+					ref={form}
+					onSubmit={sendEmail}
+					className={`${styles.catering_input} flex_center`}
+				>
 					<input
 						type='text'
 						placeholder='Enter your Name.'
@@ -42,10 +46,10 @@ const Catering = () => {
 						autoComplete='off'
 					/>
 					<input
-						// className='app__contact-email-input'
 						type="text"
 						placeholder='Enter Phone Number'
 						name='from_phone'
+						minlength='10'
 						autoComplete='off'
 					/>
 					<textarea
