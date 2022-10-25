@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 import { SubHeading } from '../../components';
@@ -7,7 +7,45 @@ import styles from './styles.module.scss';
 
 
 const Catering = () => {
+
 	const form = useRef();
+	const [validPhone, setValidPhone] = useState(true);
+	const [validEmail, setValidEmail] = useState(true);
+
+	const validateEmail = () => {
+		(/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(form.current.from_email.value) || form.current.from_email.value.trim().length === 0)
+			? setValidEmail(true)
+			: setValidEmail(false);
+	}
+
+	const validatePhone = () => {
+		(form.current.from_phone.value.trim().length > 9)
+			? setValidPhone(true)
+			: setValidPhone(false);
+	}
+
+	const validateFormSubmit = (e) => {
+		let alertMessage = content.generalErrorMessage;
+		e.preventDefault();
+		validateEmail();
+		validatePhone();
+
+		if (validPhone && validEmail) {
+			sendEmail(e);
+		}
+		else {
+			if (!validPhone && !validEmail) {
+				alertMessage = content.contactErrorMessage;
+			}
+			if (!validPhone) {
+				alertMessage = content.phoneErrorMessage;
+			}
+			if (!validEmail) {
+				alertMessage = content.emailErrorMessage;
+			}
+			alert(alertMessage)
+		}
+	}
 
 	const sendEmail = (e) => {
 		e.preventDefault();
@@ -24,7 +62,8 @@ const Catering = () => {
 			}, (error) => {
 				console.log(error.text);
 			});
-	};
+	}
+
 	return (
 		<div className='app_bg white app_wrapper section_padding' id='catering'>
 			<div className={styles.catering}>
@@ -37,35 +76,39 @@ const Catering = () => {
 
 				<form
 					ref={form}
-					onSubmit={sendEmail}
+					onSubmit={validateFormSubmit}
 					className={`${styles.catering_input} flex_center`}
 				>
 					<input
 						type='text'
-						required
 						name="from_name"
+						required
 						autoComplete='off'
 						placeholder='Enter a Name*'
 					/>
 					<input
 						type="text"
-						required
 						name='from_phone'
+						required
+						onChange={validatePhone}
 						autoComplete='off'
 						placeholder='Enter a Phone Number*'
 					/>
 					<input
 						type="text"
 						name='from_email'
+						onChange={validateEmail}
 						autoComplete='off'
 						placeholder='Enter an Email Address.'
 					/>
 					<textarea
 						className={`${styles.catering_textarea} flex_center`}
 						name='message'
+						required
 						rows="9"
 						placeholder='Tell us the catering needs for your event*'>
 					</textarea>
+
 					<br />
 					<button
 						type="submit"
@@ -79,6 +122,6 @@ const Catering = () => {
 			</div>
 		</div>
 	)
-};
+}
 
 export default Catering;

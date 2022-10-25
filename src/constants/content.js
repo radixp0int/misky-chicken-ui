@@ -39,7 +39,13 @@ const galleryImages = [
   },
 ];
 
-export default {
+/*Errors*/
+const emailErrorMessage = 'Please enter a valid Email Address!';
+const phoneErrorMessage = 'Please enter a valid Phone number!';
+const contactErrorMessage = 'Please enter valid a Phone and Email Address!';
+const generalErrorMessage = 'Please fill out all required fields!';
+
+const content = {
     title,
     header,
     subHeader,
@@ -48,4 +54,10 @@ export default {
     galleryContent1,
     galleryContent2,
     galleryImages,
+    emailErrorMessage,
+    phoneErrorMessage,
+    contactErrorMessage,
+    generalErrorMessage,
 }
+
+export default content;

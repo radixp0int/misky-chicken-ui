@@ -1,9 +1,13 @@
 @use "../../styles/index" as *;
 
+.video_wrapper {
+    background-color: $color-white;
+}
+
 .container_video {
   height: 80%;
   position: relative;
-  background-color: $color-burgundy;
+  background-color: transparent;
 
   video {
     width: 100%;

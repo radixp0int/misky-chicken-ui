@@ -167,6 +167,10 @@ body::-webkit-scrollbar-thumb {
 
 .section_padding {
   padding: 6rem 6rem;
+
+  &.video {
+    padding: 0;
+  }
 }
 
 .img_padding {
@@ -282,6 +286,10 @@ body::-webkit-scrollbar-thumb {
 
   .section_padding {
     padding: 7rem 10rem;
+
+    &.video {
+      padding: 2rem 18rem 4rem;
+    }
   }
 
   .app_wrapper {

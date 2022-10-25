@@ -77,6 +77,11 @@
     transition: .5s ease;
 }
 
+.gallery_image_icon p {
+    font-size: 1.5rem; 
+    font-weight: bold
+}
+
 .gallery_images_card:hover img {
     opacity: .35;
 }

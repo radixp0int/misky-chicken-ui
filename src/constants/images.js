@@ -18,7 +18,7 @@ import logoSlanted from '../assets/logoSlanted.png';
 import spoon from '../assets/spoon.svg';
 import spoonGolden from '../assets/spoonGolden.svg';
 
-export default {
+const images = {
   menuItem1,
   menuItem3,
   menuItem4,
@@ -39,3 +39,5 @@ export default {
   spoon,
   spoonGolden,
 };
+
+export default images;
