@@ -13,8 +13,12 @@ const About = ({ restaurant }) => (
           <br />
           <div className='app_wrapper_content'>
             <p className={`${styles.contact_location} cormorant white`}>
-              {restaurant[0]?.addressLine1} <br /> {restaurant[0]?.addressLine2}
+              {restaurant[0]?.addressLine1}
             </p>
+            <p className={`${styles.contact_location} cormorant white`}>
+              {restaurant[0]?.addressLine2}
+            </p>
+            < br />
           </div>
           <p className='opensans white'>Hours:</p>
           <div className='app_wrapper_content'>

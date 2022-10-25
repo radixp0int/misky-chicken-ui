@@ -15,9 +15,11 @@ const Home = ({ restaurant }) => {
         </div>
 
         <div className={`${styles.wrapper_img}`} >
+        <a href={restaurant[0]?.orderOnlineUrl} aria-label="Order Online Link">
           <img
-            src={images.logo}
+            src={images.logoOrder}
             alt='Restaurant Food' />
+        </a>
         </div>
 
       </div>

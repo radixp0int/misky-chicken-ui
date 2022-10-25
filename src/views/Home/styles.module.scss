@@ -64,7 +64,7 @@
   }
 
   .wrapper_img img {
-    padding: 2rem 0;
+    padding: 2rem 0 0;
     width: 100%;
     max-width: 250px;
   }
@@ -77,6 +77,8 @@
   }
 
   .wrapper_img img {
-    display: none;
+    padding: 1rem 0 0;
+    width: 100%;
+    max-width: 250px;
   }
 }
