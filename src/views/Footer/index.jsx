@@ -46,9 +46,9 @@ const Footer = ({ restaurant, date }) => {
                 </div>
                 <div className={styles.footer_links_work}>
                     <h1 className={styles.footer_headtext}>Hours</h1>
-                    <p className='opensans white'>Monday - Friday: {restaurant[0]?.weekdayHours}</p>
+                    <p className='opensans white'>Monday - Saturday: {restaurant[0]?.weekdayHours}</p>
                     <br />
-                    <p className='opensans white'>Saturday - Sunday: {restaurant[0]?.weekendHours}</p>
+                    <p className='opensans white'>Sunday: {restaurant[0]?.weekendHours}</p>
                 </div>
             </div>
             <div className={styles.footer_copyright}>
