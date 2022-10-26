@@ -22,8 +22,8 @@ const About = ({ restaurant }) => (
           </div>
           <p className='opensans white'>Hours:</p>
           <div className='app_wrapper_content'>
-            <p className={`${styles.contact_hours} cormorant white`}>Mon - Sat: {restaurant[0]?.weekdayHours}</p>
-            <p className={`${styles.contact_hours} cormorant white`}>Sunday: {restaurant[0]?.weekendHours}</p>
+            <p className={`${styles.contact_hours} cormorant white`}>{restaurant[0]?.weekdays}: {restaurant[0]?.weekdayHours}</p>
+            <p className={`${styles.contact_hours} cormorant white`}>{restaurant[0]?.weekends}: {restaurant[0]?.weekendHours}</p>
           </div>
           <br />
           <Button name='Call Us' href={`tel:${restaurant[0]?.telephone}`} color='white' />
