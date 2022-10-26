@@ -44,7 +44,7 @@ const Menu = ({ date }) => {
                             <MenuItem
                                 key={'leftMenu-' + index}
                                 title={dish.name}
-                                price={dish.price}
+                                price={dish.price.toFixed(2)}
                                 tags={dish.description}
                             />
                         ))}
@@ -62,7 +62,7 @@ const Menu = ({ date }) => {
                             <MenuItem
                                 key={'rightMenu-' + index}
                                 title={special.name}
-                                price={special.price}
+                                price={special.price.toFixed(2)}
                                 tags={special.description} />
                         ))}
                     </div>

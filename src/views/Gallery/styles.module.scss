@@ -112,9 +112,9 @@
 
 .gallery_arrow_icon {
     color: $color-golden;
-    font-size: 3rem;
+    font-size: 4rem;
     cursor: pointer;
-    background: $color-black;
+    background: $color-burgundy;
     border-radius: 5px;
 }
 
@@ -149,7 +149,7 @@
 
     .gallery_images {
         max-width: 100%;
-        margin: 5rem 0;
+        margin: 5rem 0 5rem -7vw;
     }
 }
 
@@ -173,8 +173,12 @@
     }
 
     .gallery_images_card {
-        min-width: 330px;
-        min-height: 400px;
-        height: 400px;
+        min-width: 95vw;
+        min-height: 300px;
+        height: 300px;
+    }
+
+    .gallery_arrow_icon {
+        font-size: 2.5rem;
     }
 }

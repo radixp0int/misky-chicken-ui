@@ -14,28 +14,44 @@ const galleryContent1 = 'Misky Chicken opened to the public in 2017 with the hel
 const galleryContent2 = 'Our menu encompasses of Peruvian Style Chicken, other classic Peruvian dishes, and popular specials to fill the appetite of anyone who visit us. Hungry yet? Then make some time in your day, and visit us for a delicious meal. Stuck at work, or want to stay inside? Then let us bring The Misky Chicken your way! Ask us about deliveries and catering, as we offer both to the area.'
 const galleryImages = [
   {
-    picture: images.menuItem18,
-    title: 'Menu Item 1',
+    picture: images.menuItem0,
+    title: 'Yuca con Chicharron',
   },
   {
-    picture: images.menuItem17,
-    title: 'Menu Item 2',
+    picture: images.menuItem1,
+    title: 'Pollo Saltado',
+  },
+  {
+    picture: images.menuItem2,
+    title: 'Whole Chicken',
+  },
+  {
+    picture: images.menuItem3,
+    title: 'Misky Chaufa',
   },
   {
     picture: images.menuItem4,
-    title: 'Menu Item 3',
+    title: 'Quesadilla',
   },
-  {
-    picture: images.menuItem14,
-    title: 'Menu Item 4',
-  },
+  // {
+  //   picture: images.menuItem5,
+  //   title: 'Menu Item 5',
+  // },
   {
     picture: images.menuItem6,
-    title: 'Menu Item 5',
+    title: 'Steak & Cheese',
+  },
+  {
+    picture: images.menuItem7,
+    title: 'Tallarin Saltado',
   },
   {
     picture: images.menuItem8,
-    title: 'Menu Item 6',
+    title: 'Beef Gyro',
+  },
+  {
+    picture: images.menuItem9,
+    title: 'Our Sides',
   },
 ];
 
