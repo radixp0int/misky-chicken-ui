@@ -40,9 +40,9 @@ const Footer = ({ restaurant, date }) => {
                         alt='spoon'
                         style={{ marginTop: 15 }}
                     />
-                    <div className={styles.footer_links_icons}>
+                    {/* <div className={styles.footer_links_icons}>
                         <SocialMedia />
-                    </div>
+                    </div> */}
                 </div>
                 <div className={styles.footer_links_work}>
                     <h1 className={styles.footer_headtext}>Hours</h1>

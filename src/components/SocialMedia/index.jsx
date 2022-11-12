@@ -2,15 +2,8 @@ import { FiFacebook, FiTwitter, FiInstagram } from 'react-icons/fi';
 
 import styles from './styles.module.scss';
 
-const SocialMedia = ({ Color = '' }) => {
-  const handleColor = (color) => {
-    switch (color) {
-      case 'white':
-        return styles.social_icon_white;
-      default:
-        return styles.social_icon;
-    }
-  }
+const SocialMedia = () => {
+
   return (
     <div className={styles.social_links_icons}>
       <FiFacebook size={30} className={styles.social_icon} />
