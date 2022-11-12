@@ -28,10 +28,10 @@ const About = ({ restaurant }) => (
           <br />
           <Button name='Call Us' href={`tel:${restaurant[0]?.telephone}`} color='white' />
         </div>
-        <h1 className={`${styles.follow_title} headtext_cormorant golden`}>Social Media
-        </h1>
+        {/* <h1 className={`${styles.follow_title} headtext_cormorant golden`}>Social Media
+        </h1> */}
         <div className={styles.contact_social}>
-          <SocialMedia Color='white' />
+          {/* <SocialMedia /> */}
         </div>
       </div>
 
